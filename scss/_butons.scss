@@ -1,0 +1,29 @@
+$Pink: hsl(322, 100%, 66%);
+
+$Very-Pale-Cyan: hsl(193, 100%, 96%);
+$Very-Dark-Cyan: hsl(192, 100%, 9%);
+$Grayish-Blue: hsl(208, 11%, 55%);
+
+input[type="button"] {
+  outline: none;
+  border: none;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  border-radius: 2rem;
+  &:hover {
+    cursor: pointer;
+    opacity: 0.7;
+  }
+}
+
+.btn_white {
+  padding: 0.4rem 1rem;
+  box-shadow: 1px 1px 1px hsla(209, 11%, 55%, 0.26);
+  background-color: white;
+}
+
+.btn_pink {
+  padding: 1rem 2.5rem;
+  background-color: $Pink;
+  color: white;
+}

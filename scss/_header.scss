@@ -1,0 +1,37 @@
+$Pink: hsl(322, 100%, 66%);
+
+$Very-Pale-Cyan: hsl(193, 100%, 96%);
+$Very-Dark-Cyan: hsl(192, 100%, 9%);
+$Grayish-Blue: hsl(208, 11%, 55%);
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  img {
+    height: 1.2rem;
+  }
+  .btn_white {
+    margin-left: auto;
+    margin-right: 0;
+  }
+}
+header {
+  background-image: url("./images/bg-hero-mobile.svg");
+  background-size: cover;
+  background-color: $Very-Pale-Cyan;
+  padding: 2rem 1rem;
+  section {
+    padding: 5rem 2rem;
+    padding-bottom: 2rem;
+    text-align: center;
+
+    p {
+      padding-bottom: 2rem;
+    }
+  }
+  .intro {
+    padding-top: 3rem;
+    width: 100%;
+  }
+}

@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@600&display=swap");
+@import "./butons";
+@import "./header";
+@import "./cards";
+@import "./footer";
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+$Pink: hsl(322, 100%, 66%);
+
+$Very-Pale-Cyan: hsl(193, 100%, 96%);
+$Very-Dark-Cyan: hsl(192, 100%, 9%);
+$Grayish-Blue: hsl(208, 11%, 55%);
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+}
+
+h3,
+h4,
+h5 {
+  font-family: "Poppins", sans-serif;
+  padding-bottom: 1rem;
+}
+
+h3 {
+  font-size: 1.953rem;
+}
+
+h5 {
+  font-size: 1.25rem;
+  font-weight: bold;
+  padding-bottom: 2rem;
+}
+
+h4 {
+  font-size: 1.563rem;
+  font-weight: bold;
+}
+
+@media (min-width: 1440px) {
+  header {
+    padding: 3rem 5rem;
+    background-image: url("./images/bg-hero-desktop.svg");
+    background-size: cover;
+    background-color: $Very-Pale-Cyan;
+
+    .logo {
+      height: 2rem;
+    }
+    input {
+      font-size: 1rem;
+    }
+    .btn_white {
+      padding: 0.9rem 3rem;
+    }
+    section {
+      display: grid;
+      grid-template-columns: 50% 50%;
+      align-items: center;
+      gap: 2rem;
+      text-align: left;
+
+      p {
+        max-width: 50ch;
+      }
+
+      h3 {
+        max-width: 20ch;
+      }
+    }
+  }
+
+  .cards {
+    padding: 10rem 5rem;
+    padding-bottom: 15rem;
+  }
+
+  .card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+    padding: 5rem;
+    img {
+      max-width: 40rem;
+    }
+    p {
+      max-width: 50ch;
+    }
+    img {
+      grid-area: img;
+    }
+    .txt {
+      grid-area: txt;
+    }
+  }
+  .card1 {
+    grid-template-areas: "txt img";
+    img {
+      margin-left: auto;
+      margin-right: 0;
+    }
+  }
+
+  .card2 {
+    grid-template-areas: "img txt";
+    .txt {
+      margin-left: auto;
+      margin-right: 0;
+    }
+  }
+
+  footer {
+    padding: 5rem;
+    .logo {
+      margin-bottom: 2rem;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 3rem;
+      .socials {
+        justify-content: flex-start;
+      }
+      ol {
+        padding: 0;
+      }
+    }
+    p {
+      text-align: right;
+    }
+  }
+
+  h5 {
+    font-size: 1.563rem;
+  }
+}

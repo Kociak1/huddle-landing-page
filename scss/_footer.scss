@@ -1,0 +1,110 @@
+$Pink: hsl(322, 100%, 66%);
+
+$Very-Pale-Cyan: hsl(193, 100%, 96%);
+$Very-Dark-Cyan: hsl(192, 100%, 9%);
+$Grayish-Blue: hsl(208, 11%, 55%);
+
+footer {
+  background-color: $Very-Dark-Cyan;
+  padding: 1rem;
+  position: relative;
+
+  section {
+    color: white;
+    padding-top: 8rem;
+    .logo {
+      height: 2rem;
+      transform: translateX(-1rem);
+    }
+  }
+
+  ul {
+    padding-left: 2rem;
+    font-size: 1rem;
+  }
+
+  li {
+    padding-left: 1rem;
+    padding-top: 1.5rem;
+  }
+
+  ol li:hover {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+
+  .location {
+    list-style-image: url("./images/icon-location.svg");
+  }
+
+  .phone {
+    list-style-image: url("./images/icon-phone.svg");
+  }
+
+  .email {
+    list-style-image: url("./images/icon-email.svg");
+  }
+
+  ol {
+    padding: 2rem 0;
+    list-style: none;
+  }
+
+  ol:nth-of-type(1) {
+    padding-bottom: 0;
+  }
+
+  ol:last-of-type {
+    padding-top: 0;
+  }
+
+  svg {
+    fill: white;
+  }
+
+  .card {
+    position: absolute;
+    width: calc(100% - 2rem);
+    transform: translateY(-75%) translateX(-50%);
+    left: 50%;
+    display: flex;
+    flex-direction: column;
+    max-width: 60rem;
+  }
+
+  p {
+    text-align: center;
+    font-size: 0.8rem;
+    color: $Grayish-Blue;
+  }
+
+  input[type="button"] {
+    box-shadow: 3px 3px 1px hsla(209, 11%, 55%, 0.26);
+  }
+}
+
+.icon {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 5rem;
+  border: 1px solid white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:hover {
+    border-color: $Pink;
+
+    svg {
+      fill: $Pink;
+      cursor: pointer;
+    }
+  }
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  padding: 2rem 0;
+}

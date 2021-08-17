@@ -1,0 +1,364 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@600&display=swap");
+input[type="button"] {
+  outline: none;
+  border: none;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  border-radius: 2rem;
+}
+
+input[type="button"]:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.btn_white {
+  padding: 0.4rem 1rem;
+  -webkit-box-shadow: 1px 1px 1px rgba(128, 141, 153, 0.26);
+          box-shadow: 1px 1px 1px rgba(128, 141, 153, 0.26);
+  background-color: white;
+}
+
+.btn_pink {
+  padding: 1rem 2.5rem;
+  background-color: #ff52bf;
+  color: white;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+nav img {
+  height: 1.2rem;
+}
+
+nav .btn_white {
+  margin-left: auto;
+  margin-right: 0;
+}
+
+header {
+  background-image: url("./images/bg-hero-mobile.svg");
+  background-size: cover;
+  background-color: #ebfbff;
+  padding: 2rem 1rem;
+}
+
+header section {
+  padding: 5rem 2rem;
+  padding-bottom: 2rem;
+  text-align: center;
+}
+
+header section p {
+  padding-bottom: 2rem;
+}
+
+header .intro {
+  padding-top: 3rem;
+  width: 100%;
+}
+
+.card {
+  text-align: center;
+  padding: 2rem;
+  -webkit-box-shadow: 0 0 5px 1px rgba(128, 141, 153, 0.178);
+          box-shadow: 0 0 5px 1px rgba(128, 141, 153, 0.178);
+  border-radius: 1rem;
+  margin-bottom: 3rem;
+  background-color: white;
+}
+
+.card img {
+  width: 100%;
+  padding: 3rem 0;
+}
+
+.card p {
+  color: #808d99;
+  padding-bottom: 1rem;
+  line-height: 1.8rem;
+}
+
+.cards {
+  padding: 4rem 1rem;
+  padding-bottom: 12rem;
+}
+
+footer {
+  background-color: #00252e;
+  padding: 1rem;
+  position: relative;
+}
+
+footer section {
+  color: white;
+  padding-top: 8rem;
+}
+
+footer section .logo {
+  height: 2rem;
+  -webkit-transform: translateX(-1rem);
+          transform: translateX(-1rem);
+}
+
+footer ul {
+  padding-left: 2rem;
+  font-size: 1rem;
+}
+
+footer li {
+  padding-left: 1rem;
+  padding-top: 1.5rem;
+}
+
+footer ol li:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+footer .location {
+  list-style-image: url("./images/icon-location.svg");
+}
+
+footer .phone {
+  list-style-image: url("./images/icon-phone.svg");
+}
+
+footer .email {
+  list-style-image: url("./images/icon-email.svg");
+}
+
+footer ol {
+  padding: 2rem 0;
+  list-style: none;
+}
+
+footer ol:nth-of-type(1) {
+  padding-bottom: 0;
+}
+
+footer ol:last-of-type {
+  padding-top: 0;
+}
+
+footer svg {
+  fill: white;
+}
+
+footer .card {
+  position: absolute;
+  width: calc(100% - 2rem);
+  -webkit-transform: translateY(-75%) translateX(-50%);
+          transform: translateY(-75%) translateX(-50%);
+  left: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 60rem;
+}
+
+footer p {
+  text-align: center;
+  font-size: 0.8rem;
+  color: #808d99;
+}
+
+footer input[type="button"] {
+  -webkit-box-shadow: 3px 3px 1px rgba(128, 141, 153, 0.26);
+          box-shadow: 3px 3px 1px rgba(128, 141, 153, 0.26);
+}
+
+.icon {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 5rem;
+  border: 1px solid white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.icon:hover {
+  border-color: #ff52bf;
+}
+
+.icon:hover svg {
+  fill: #ff52bf;
+  cursor: pointer;
+}
+
+.socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 1rem;
+  padding: 2rem 0;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+}
+
+h3,
+h4,
+h5 {
+  font-family: "Poppins", sans-serif;
+  padding-bottom: 1rem;
+}
+
+h3 {
+  font-size: 1.953rem;
+}
+
+h5 {
+  font-size: 1.25rem;
+  font-weight: bold;
+  padding-bottom: 2rem;
+}
+
+h4 {
+  font-size: 1.563rem;
+  font-weight: bold;
+}
+
+@media (min-width: 1440px) {
+  header {
+    padding: 3rem 5rem;
+    background-image: url("./images/bg-hero-desktop.svg");
+    background-size: cover;
+    background-color: #ebfbff;
+  }
+  header .logo {
+    height: 2rem;
+  }
+  header input {
+    font-size: 1rem;
+  }
+  header .btn_white {
+    padding: 0.9rem 3rem;
+  }
+  header section {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 50% 50%;
+        grid-template-columns: 50% 50%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 2rem;
+    text-align: left;
+  }
+  header section p {
+    max-width: 50ch;
+  }
+  header section h3 {
+    max-width: 20ch;
+  }
+  .cards {
+    padding: 10rem 5rem;
+    padding-bottom: 15rem;
+  }
+  .card {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: left;
+    padding: 5rem;
+  }
+  .card img {
+    max-width: 40rem;
+  }
+  .card p {
+    max-width: 50ch;
+  }
+  .card img {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: img;
+  }
+  .card .txt {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: txt;
+  }
+  .card1 {
+        grid-template-areas: "txt img";
+  }
+  .card1 img {
+    margin-left: auto;
+    margin-right: 0;
+  }
+  .card2 {
+        grid-template-areas: "img txt";
+  }
+  .card2 .txt {
+    margin-left: auto;
+    margin-right: 0;
+  }
+  footer {
+    padding: 5rem;
+  }
+  footer .logo {
+    margin-bottom: 2rem;
+  }
+  footer .grid {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+    gap: 3rem;
+  }
+  footer .grid .socials {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  footer .grid ol {
+    padding: 0;
+  }
+  footer p {
+    text-align: right;
+  }
+  h5 {
+    font-size: 1.563rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */

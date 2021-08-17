@@ -1,0 +1,24 @@
+$Pink: hsl(322, 100%, 66%);
+
+$Very-Pale-Cyan: hsl(193, 100%, 96%);
+$Very-Dark-Cyan: hsl(192, 100%, 9%);
+$Grayish-Blue: hsl(208, 11%, 55%);
+
+.card {
+  text-align: center;
+  padding: 2rem;
+  box-shadow: 0 0 5px 1px hsla(209, 11%, 55%, 0.178);
+  border-radius: 1rem;
+  margin-bottom: 3rem;
+  background-color: white;
+  img {
+    width: 100%;
+    padding: 3rem 0;
+  }
+
+  p {
+    color: $Grayish-Blue;
+    padding-bottom: 1rem;
+    line-height: 1.8rem;
+  }
+}
